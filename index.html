@@ -8,32 +8,90 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>DIGIMON</title>
 </head>
-<nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Datos</a></li>
-      <li><a href="#">Acceso</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </nav>
+
 <body>
+  <audio controls autoplay>
+    <source src="assets/music/digimon.mp3" type="audio/mpeg">
+    <source src="assets/music/digimon.ogg" type="audio/ogg">
+    Tu navegador no admite la reproducción de audio.
+</audio>
+  <div id="particles-js"></div>
+<header>
+      <div class="container">
+<p class="logo">Digimon!!!</p>
+<img src="assets/img/digimon_world_logo.png" alt="LOGO" class="logo img-fluid">
 
-    <!-- Este comentario para hacer una prueba y que realmente se actualize en GIThub, repositorio
-    20 Abril 2023, 23:11
-
-    -->
-    <div id="contenido">
-        
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Mi Página</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#datos">Datos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#acceso">Acceso</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
+
+
+</header>
     
-    
+<div id="contenido" class="container"> <!-- Cambio: Agregar la clase container -->
+  
 
+</div>
+<div id="detalle" class="container" style="display: none;">
+  <h2 id="nombre-digimon">Nombre del Digimon</h2>
+  <div id="foto-digimon"><img src="" alt="Foto del Digimon"></div>
+  <p id="datos-digimon">Datos del Digimon</p>
+</div>
 
+<audio id="backgroundMusic" loop>
+  <source src="assets/music/digimon.mp3" type="audio/mpeg">
+</audio>
 
+<section id="home">
+  <h2 class="mt-5">Home</h2>
+  <p>Bienvenido a nuestra página de inicio.</p>
+  <a href="#" class="btn btn-primary" onclick="scrollToTop()">Regresar a página principal</a>
+</section>
 
-    
+<section id="datos">
+  <h2 class="mt-5">Datos</h2>
+  <p>Aquí encontrarás información relevante.</p>
+  <a href="#" class="btn btn-primary" onclick="scrollToTop()">Regresar a página principal</a>
+</section>
 
-    
+<section id="acceso">
+  <h2 class="mt-5">Acceso</h2>
+  <p>Accede a tu cuenta aquí.</p>
+  <a href="#" class="btn btn-primary" onclick="scrollToTop()">Regresar a página principal</a>
+</section>
+
+<section id="contact">
+  <h2 class="mt-5">Contact Us</h2>
+  <p>Contáctanos si tienes alguna pregunta.</p>
+  <a href="#" class="btn btn-primary" onclick="scrollToTop()">Regresar a página principal</a>
+</section>
+<button id="volver-button" class="btn btn-secondary" style="display: none;">Volver</button>
+
+<div id="detalle" class="container" style="display: none;">
+  <h2 id="nombre-digimon" class="text-center display-4"></h2>
+  <div id="foto-digimon" class="text-center"></div>
+  <p id="datos-digimon" class="text-center"></p>
+</div>
+
+      <!--<div id="contenido">
+          
+    </div>
+  -->
+
+    <script src="assets/js/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>

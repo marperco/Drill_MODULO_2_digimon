@@ -1,37 +1,113 @@
+* {
+
+}
+
+
+
+
 body {
-    background-color: black;
+    background-color: #1e0d20;
     
   }
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+.container{
+  width: 90%;
+  max-width: 1200px;
+  background-size: cover;
+  background-image: url('../img/fondo_dgm.jpg');
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  padding: 20px 30px;
+  position: relative;
+  z-index: 99;
+  opacity: .85;
+}
+
 .tarjeta {
     margin: 2%;
     display: inline-block;
+    transition: transform 0.3s;
 
 }
+.tarjeta:hover {
+  transform: scale(1.2); /* Escala la tarjeta en un 110% */
+}
+
 nav {
-  background-color: #333; /* Cambia este valor para el color que prefieras */
-  overflow: hidden;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+.card-img-top {
+  background-color: #7266f0; 
 }
 
-nav ul {
+.card {
+  background-color: #b9b5c9; /* Cambia este color al que desees */
+}
+
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-nav li {
-  float: left;
+li {
+  margin: 0 10px;
 }
 
-nav li a {
-  display: block;
-  color: white; /* Cambia este valor para el color de texto que prefieras */
-  text-align: center;
-  padding: 14px 16px;
+a {
+  color: white;
   text-decoration: none;
 }
 
-nav li a:hover {
-  background-color: #111; /* Cambia este valor para el color que prefieras al pasar el mouse por encima */
+a:hover {
+  text-decoration: underline;
+}
+.logo {
+  display: block; /* Asegura que la imagen se muestra como un bloque */
+  margin: 1 auto; /* Centra la imagen en la página */
+  height: 100%; /* Ajusta la altura */
+  width: 100%; /* Ajusta el ancho */
+}
+.logo img {
+  max-width: 30%;
+  height: auto;
+}
+
+section {
+  padding: 50px;
+  background-color: #444; /* Color de fondo de las secciones */
+  color: white; /* Color del texto en las secciones */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Estilos para el enlace de "Regresar a página principal" */
+section a {
+  color: #fff; /* Color del enlace */
+  text-decoration: none;
+  border-bottom: 1px dashed #fff; /* Línea punteada debajo del enlace */
+  transition: opacity 0.3s; /* Transición de opacidad al pasar el ratón */
+}
+
+section a:hover {
+  opacity: 0.8; /* Opacidad reducida al pasar el ratón */
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
